@@ -45,10 +45,114 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	color: $textcol
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
 
+.headline
+	background-image: url("../img/headlinebg.jpg")
+	background-position: center
+	background-size: inherit
+	position: relative
+	width: 100%
+	height: 126px
+.headline-over
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 10
+	background-color: rgba(66,244,229,.84)
+.phones
+	background-color: #fff
+	border-radius: 15px
+	width: 220px
+	margin-top: 32px
+	position: relative
+	height: 52px
+	float: left
+	img
+		float: left
+		width: 40px
+		position: absolute
+		top: 8px
+		left: 12px
+	a 
+		color: $textcol
+		&:hover
+			text-decoration: none	
+.phone
+	float: right
+	display: block
+	margin-right: 20px
+
+.addr
+	@extend .phones
+	float: right
+	width: 386px
+	img
+		width: 40px
+		top: 2px
+.name
+	font-size: 16px
+.address
+	font-size: 14px
+.ad
+	float: right
+	margin-top: 5px
+	margin-right: 10px
+.vers
+	font-weight: 700
+	text-align: center
+	vertical-align: bottom
+	a 
+		text-align: center
+
+
+.menu
+	float: right
+	position: absolute
+	bottom: 0
+	right: 0
+	li 
+		display: inline-block
+		font-weight: 500
+		margin: 0 5px
+		background-color: #FFF
+
+		a 
+			border-radius: 5px
+			padding: 5px 10px
+			color: $textcol
+			&:hover
+				background-color: #3f888f
+				color: #fff
+				text-decoration: none
+.bx-wrapper
+	box-shadow: 0 0 0px #ccc
+	margin-bottom: 0
+.bx-wrapper .bx-prev
+	background: url(../img/controls.png) 0px -32px no-repeat;
+.bx-wrapper .bx-next
+    background: url(../img/controls.png) -43px -32px no-repeat;
+h1
+	text-align: center
+.hello-block
+	p 
+		text-align: center
+.car 
+	img 
+		height: 60px
+.item
+	&:nth-child(1)
+		background-color: #00b1c1
+	&:nth-child(2)
+		background-color: #000
+.itimg
+	width: 60px
+	margin-top: 30px
 @import "media" // Всегда в конце
