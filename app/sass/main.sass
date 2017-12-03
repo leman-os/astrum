@@ -55,7 +55,7 @@ body
 .headline
 	background-image: url("../img/headlinebg.jpg")
 	background-position: center
-	background-size: inherit
+	background-size: cover
 	position: relative
 	width: 100%
 	height: 126px
@@ -121,12 +121,12 @@ body
 	li 
 		display: inline-block
 		font-weight: 500
-		margin: 0 5px
+		margin: 0 2px
 		background-color: #FFF
 
 		a 
 			border-radius: 5px
-			padding: 5px 10px
+			padding: 10px 10px
 			color: $textcol
 			&:hover
 				background-color: #3f888f
@@ -144,15 +144,132 @@ h1
 .hello-block
 	p 
 		text-align: center
-.car 
-	img 
-		height: 60px
-.item
-	&:nth-child(1)
-		background-color: #00b1c1
-	&:nth-child(2)
-		background-color: #000
-.itimg
-	width: 60px
-	margin-top: 30px
+.item-deti
+	background-color: #00b1c1
+	border-radius: 15px
+	height: 300px
+	padding-top: 20px
+	width: 270px
+	position: relative
+	.imag
+		content: ''
+		background-image: url("../img/icon/baby.png")
+		width: 85px
+		height: 90px
+		background-size: cover
+		background-position: center
+		margin: 0 auto
+		margin-bottom: 15px
+	a
+		color: $textcol
+		font-size: 20px
+		margin-top: 15px
+		margin-bottom: 0
+		text-transform: uppercase
+		line-height: 1
+	p 
+		margin-top: 5px
+		line-height: 1.4
+		color: #fff
+		position: absolute
+		bottom: 0
+		padding: 0 10px
+		text-align: center
+.item-lab
+	@extend .item-deti
+	background-color: #00c164
+	.imag
+		background-image: url("../img/icon/lab.png")
+.item-podg
+	@extend .item-deti
+	background-color: #079f93
+	.imag
+		background-image: url("../img/icon/micro.png")
+.owl-theme .owl-nav
+	position: absolute
+	top: 35%
+	width: 100%
+.owl-prev
+	position: absolute
+	left: -25px
+	
+.owl-next
+	position: absolute
+	right: -24px
+	background: none
+.zakazzv
+	background-image: url("../img/zvbg.jpg")
+	background-position: center
+	background-size: cover
+	position: relative
+	width: 100%
+	height: 380px
+	.bgover
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 10
+		background-color: rgba(66,244,229,.62)
+.txt1
+	background-color: #7fcdb8
+	border-radius: 15px
+	padding: 6px 15px
+	margin-top: 60px
+	margin-left: 30px
+	margin-bottom: 0
+	margin-right: 30px
+	h4
+		text-align: center
+		font-size: 25px
+		font-weight: 100
+.txt2
+	background-color: #6be0d8
+	border-radius: 15px
+	padding: 16px 15px
+	margin-left: 30px
+	margin-bottom: 0
+	margin-right: 30px
+	h4
+		margin-top: 0
+		margin-bottom: 0
+		text-align: center
+		font-size: 20px
+		font-weight: 100
+.but
+	width: 100%
+	text-align: center
+	margin-top: 20px
+.btnzak
+	background-color: #3f888f
+	border-radius: 15px
+	padding: 15px 25px
+	color: #fff
+	&:hover
+		text-decoration: none
+		background-color: #fff
+		color: #000
+		border: 1px black aolid
+.about
+	background-image: url("../img/aboutbg.jpg")
+	background-position: center
+	background-size: cover
+	position: relative
+	width: 100%
+	height: 700px
+	.aboutover
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 10
+		background-color: rgba(255,255,255,.98)
+h3
+	font-weight: 700
+	font-size: 25px
+	text-align: center
+	text-transform: uppercase
+
 @import "media" // Всегда в конце
